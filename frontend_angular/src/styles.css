@@ -1,1 +1,211 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web&display=swap');
+
+/*css reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
+
+header{
+    background-color: #1e1c21;
+    height: 100px;
+    padding: 20px;
+}
+
+.container-grid {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Roboto";
+}
+
+.menu {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icone-menu {
+    width: 40px;
+}
+
+#bars {
+    display: none;
+}
+
+.banner {
+    height: 540px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-f1 {
+    background-image: url(assets/img/banner-car.png);
+}
+
+.banner-car {
+    background-image: url(assets/img/banner-f1.png);
+}
+
+.banner-cs {
+    background-image: url(assets/img/banner_cs.png);
+}
+
+.banner-lol {
+    background-image: url(assets/img/banner_lol.png);
+}
+
+
+.text-banner {
+    width: 497px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.text-banner h1 {
+    color: #fff;
+    font-size: 70px;
+    font-family: "Titillium Web";
+}
+
+.text-banner p {
+    color: #fff;
+    font-size: 22px;
+    font-family: "Roboto";
+}
+
+.text-banner a {
+    padding: 10px;
+    background-color: #1EF50B;
+    color: #fff;
+    font-family: "Roboto";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-banner {
+    width: 497px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.position-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.games {
+    background-color: black;
+    height: 120px;
+}
+
+.position-games {
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+
+.pages {
+    display: block;
+    justify-content: start;
+}
+
+.links {
+    display: block;
+    justify-content: end;
+}
+
+.position-cards {
+    background-color: #0D0568;
+}
+
+#img {
+    width: 200px;
+    height: 300px;
+}
+
+.textcars {
+    background-image: url(assets/img/textcars.png);
+    height: 410px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.textcars-banner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1200px ) {
+    .container-grid {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px ) {
+    .container-grid {
+        width: 800px;
+    }
+
+    #bars {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 91px;
+        right: 0px;
+        background-color: #1e1c21;
+        height: 400PX;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+    .menu-ativo {
+        display: flex;
+    }
+}

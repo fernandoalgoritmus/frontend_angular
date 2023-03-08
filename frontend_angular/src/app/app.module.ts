@@ -5,16 +5,30 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './views/header/header.component';
 import { LoginComponent } from './views/login/login.component';
+import { FooterComponent } from './views/footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { IndexComponent } from './views/index/index.component';
+import { TimesComponent } from './views/times/times.component';
+import { ChampionshipComponent } from './views/championship/championship.component';
+import { ResultsComponent } from './views/results/results.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent,
+    IndexComponent,
+    TimesComponent,
+    ChampionshipComponent,
+    ResultsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

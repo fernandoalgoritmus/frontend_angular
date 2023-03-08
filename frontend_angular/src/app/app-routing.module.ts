@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeaderComponent } from './views/header/header.component';
+import { ChampionshipComponent } from './views/championship/championship.component';
+import { IndexComponent } from './views/index/index.component';
 import { LoginComponent } from './views/login/login.component';
+import { ResultsComponent } from './views/results/results.component';
+import { TimesComponent } from './views/times/times.component';
 
 const routes: Routes = [
-  {path:"header", component: HeaderComponent},
+  
   {path:"login", component: LoginComponent},
+  {path:"", component: IndexComponent},
+  {path:"results", component: ResultsComponent},
+  {path:"times", component: TimesComponent},
+  {path:"championship", component: ChampionshipComponent},
 ];
 
 @NgModule({
