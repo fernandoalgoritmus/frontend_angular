@@ -11,6 +11,7 @@ import { IndexComponent } from './views/index/index.component';
 import { TimesComponent } from './views/times/times.component';
 import { ChampionshipComponent } from './views/championship/championship.component';
 import { ResultsComponent } from './views/results/results.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -28,7 +29,8 @@ import { ResultsComponent } from './views/results/results.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

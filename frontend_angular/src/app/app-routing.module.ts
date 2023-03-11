@@ -8,8 +8,8 @@ import { TimesComponent } from './views/times/times.component';
 
 const routes: Routes = [
   
-  {path:"login", component: LoginComponent},
   {path:"", component: IndexComponent},
+  {path:"login", component: LoginComponent},
   {path:"results", component: ResultsComponent},
   {path:"times", component: TimesComponent},
   {path:"championship", component: ChampionshipComponent},
