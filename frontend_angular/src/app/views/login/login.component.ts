@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import { LoginService } from 'src/app/services/login.service';
-import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-login',
